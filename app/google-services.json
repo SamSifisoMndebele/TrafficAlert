@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "231039128746",
+    "project_id": "traffic-alert-58d61",
+    "storage_bucket": "traffic-alert-58d61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231039128746:android:25739687c24d4c511a2cd3",
+        "android_client_info": {
+          "package_name": "com.pablo.trafficalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231039128746-arqik621rva6270bojv74s33eph7ckus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASA3EPm9rOncpqXRX6gZdFjwLhvMqPhBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231039128746-arqik621rva6270bojv74s33eph7ckus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

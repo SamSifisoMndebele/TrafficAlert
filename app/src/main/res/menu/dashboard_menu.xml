@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_all_reports"
+        android:title="All  reports"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_my_reports"
+        android:title="My reports"
+        app:showAsAction="never" />
+</menu>

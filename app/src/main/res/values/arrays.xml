@@ -1,0 +1,10 @@
+<resources>
+    <string-array name="report_title">
+        <item>Select report title</item>
+        <item>Accident</item>
+        <item>Bad road conditions</item>
+        <item>Stop and go</item>
+        <item>Traffic Jam</item>
+        <item>Other</item>
+    </string-array>
+</resources>

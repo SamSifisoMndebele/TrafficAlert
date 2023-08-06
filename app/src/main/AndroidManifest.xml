@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TrafficAlert.Splash"
+        tools:targetApi="31">
+        <activity
+            android:name=".main.report.EditReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.report.ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:exported="false"
+            android:label="@string/profile"
+            android:parentActivityName=".main.MainActivity" />
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".auth.AuthActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
