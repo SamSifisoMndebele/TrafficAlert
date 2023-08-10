@@ -55,12 +55,33 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:hint="@string/signup_name_hint"
+            android:hint="Names *"
             app:expandedHintEnabled="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/signup_image_view"
-            app:placeholderText="@string/signup_name_ph">
+            app:placeholderText="Enter your first names">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/last_name_text_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Lastname *"
+            app:expandedHintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/names_text_input"
+            app:placeholderText="Enter your Lastname">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -77,12 +98,12 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="16dp"
-            android:hint="@string/signup_mobile_hint"
+            android:hint="Phone number *"
             app:expandedHintEnabled="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/names_text_input"
-            app:placeholderText="@string/signup_mobile_ph">
+            app:layout_constraintTop_toBottomOf="@id/last_name_text_input"
+            app:placeholderText="Enter your phone number">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -98,12 +119,12 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="16dp"
-            android:hint="EMAIL"
+            android:hint="Email *"
             app:expandedHintEnabled="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/number_text_input"
-            app:placeholderText="Your Email">
+            app:placeholderText="Enter your email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -119,13 +140,13 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="16dp"
-            android:hint="@string/signup_password_hint"
+            android:hint="Password *"
             app:endIconMode="password_toggle"
             app:expandedHintEnabled="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/email_text_input"
-            app:placeholderText="@string/signup_password_ph">
+            app:placeholderText="Create a password">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -142,13 +163,13 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="16dp"
-            android:hint="@string/signup_conf_password_hint"
+            android:hint="Confirm password *"
             app:endIconMode="password_toggle"
             app:expandedHintEnabled="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/password_text_input"
-            app:placeholderText="@string/signup_cnf_password_ph">
+            app:placeholderText="Corfirm the password above">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -183,13 +204,13 @@
             android:layout_marginTop="10dp"
             android:visibility="gone"
             android:layout_marginEnd="16dp"
-            android:hint="@string/verification_code"
+            android:hint="Admin verification code *"
             app:endIconMode="password_toggle"
             app:expandedHintEnabled="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/is_admin_switch"
-            app:placeholderText="@string/admin_verification_code">
+            app:placeholderText="Enter your admin verification code">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"

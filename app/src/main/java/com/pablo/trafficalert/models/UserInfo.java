@@ -11,43 +11,60 @@ import org.jetbrains.annotations.Nullable;
 
 public class UserInfo implements Parcelable {
     private @NotNull String uid = "";
-    private @NotNull String email = "";
-    private @Nullable String phoneNumber = null;
     private @Nullable String names = null;
     private @Nullable String lastName = null;
-    private @Nullable String imageUrl = null;
+    private @NotNull String email = "";
+    private @Nullable String phoneNumber = null;
     private boolean isAdmin = false;
+    private @Nullable String imageUrl = null;
     private @Nullable CarInfo carInfo = null;
 
-    @NonNull
     @Override
     public String toString() {
-        return "\nUserInfo{" +
+        return "UserInfo{" +
                 "uid='" + uid + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
                 ", names='" + names + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", imageUrl='" + imageUrl + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 ", isAdmin=" + isAdmin +
+                ", imageUrl='" + imageUrl + '\'' +
                 ", carInfo=" + carInfo +
                 '}';
     }
 
     public UserInfo() { }
+
     public UserInfo(@NotNull String uid, @NotNull String email) {
         this.uid = uid;
         this.email = email;
     }
 
-    public UserInfo(@NotNull String uid, @NotNull String email, @Nullable String phoneNumber, @Nullable String names, @Nullable String lastName, @Nullable String imageUrl, boolean isAdmin, @Nullable CarInfo carInfo) {
+    public UserInfo(@NotNull String uid, @Nullable String names, @Nullable String lastName, @NotNull String email, @Nullable String phoneNumber) {
         this.uid = uid;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
         this.names = names;
         this.lastName = lastName;
-        this.imageUrl = imageUrl;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public UserInfo(@NotNull String uid, @Nullable String names, @Nullable String lastName, @NotNull String email, @Nullable String phoneNumber, boolean isAdmin) {
+        this.uid = uid;
+        this.names = names;
+        this.lastName = lastName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
         this.isAdmin = isAdmin;
+    }
+
+    public UserInfo(@NotNull String uid, @Nullable String names, @Nullable String lastName, @NotNull String email, @Nullable String phoneNumber, boolean isAdmin, @Nullable String imageUrl, @Nullable CarInfo carInfo) {
+        this.uid = uid;
+        this.names = names;
+        this.lastName = lastName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.isAdmin = isAdmin;
+        this.imageUrl = imageUrl;
         this.carInfo = carInfo;
     }
 
